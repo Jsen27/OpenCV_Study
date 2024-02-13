@@ -15,7 +15,7 @@ void brighten(Mat& img, int value)
 
 int main()
 {
-	Mat img = imread("E:image.jpg");
+	Mat img = imread("E:lenna.jpg", IMREAD_GRAYSCALE);
 	imshow("Original image", img);
 	
 	brighten(img, 30);

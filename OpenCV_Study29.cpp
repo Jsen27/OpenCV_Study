@@ -17,7 +17,7 @@ int main()
 	Mat table(1, 256, CV_8U);
 	uchar *p = table.ptr();
 	for (int i = 0; i < 256; ++i)
-		p[i] = saturate_cast<uchar>(pow(i / 255, gamma) * 255);
+		p[i] = saturate_cast<uchar>(pow(i / 255.0, gamma) * 255.0);
 	
 	LUT(src1, table, dst);
 	imshow("src1", src1);

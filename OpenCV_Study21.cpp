@@ -8,7 +8,7 @@ using namespace cv;
 
 int main()
 {
-	Mat img = imread("E:image.jpg");
+	Mat img = imread("E:lenna.jpg");
 	imshow("Original image", img);
 	
 	Mat oimage;

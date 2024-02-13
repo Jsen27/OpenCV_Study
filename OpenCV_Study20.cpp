@@ -8,7 +8,7 @@ using namespace cv;
 
 int main()
 {
-	Mat img = imread("E:image.jpg");
+	Mat img = imread("E:lenna.jpg", IMREAD_GRAYSCALE);
 	imshow("image", img);
 	
 	for(int i = 0; i < img.rows; i++)

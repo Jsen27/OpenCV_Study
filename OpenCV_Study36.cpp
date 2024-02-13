@@ -4,8 +4,6 @@
 using namespace std;
 using namespace cv;
 
-// 히스토그램 평활화
-
 int main()
 {
 	Mat src = imread("E:lenna.jpg", IMREAD_GRAYSCALE);

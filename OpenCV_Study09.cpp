@@ -18,7 +18,7 @@ int main()
 	cout << "한 화소 크기 = " << img.elemSize() << endl;
 	cout << "타입 = " << img.type() << endl;
 	cout << "채널 = " << img.channels() << endl;
-	wiatKey();
+	waitKey();
 	
 	return 0;
 }

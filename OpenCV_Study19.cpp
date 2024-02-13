@@ -40,7 +40,7 @@ int main()
 		if (key == 'q') break;	// 사용자가 'q'를 누르면 종료
 		else if (key == 'c') {	// 사용자가 'c'를 누르면 관심영역을 파일로 저장
 			roi = clone(Rect(mx1, my1, mx2 - mx1, my2 - my1));
-			imwrite("E:image2	// 복사본을 만들어둔다..jpg", roi);
+			imwrite("E:image2.jpg", roi); 	// 복사본을 만들어둔다.
 		}
 	}
 

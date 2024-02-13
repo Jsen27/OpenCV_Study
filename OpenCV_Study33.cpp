@@ -38,7 +38,7 @@ void drawHist(int histogram[])
 
 int main()
 {
-	Mat src = imread("lenna.jpg", IMREAD_GRAYSCALE);
+	Mat src = imread("E:lenna.jpg", IMREAD_GRAYSCALE);
 	imshow("Input Image", src);
 	int histogram[256] = {0};
 

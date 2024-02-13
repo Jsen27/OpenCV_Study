@@ -7,8 +7,8 @@ using namespace cv;
 
 int main()
 {
-	Mat A = imread("E:image.jpg");
-	Mat B = imread("E:logo.jpg");
+	Mat A = imread("E:lenna.jpg");
+	Mat B = imread("E:image.jpg");
 	Mat roi(A, Rect(A.cols - B.cols, A.rows - B.rows, B.cols, B.rows));
 	B.copyTo(roi);
 	

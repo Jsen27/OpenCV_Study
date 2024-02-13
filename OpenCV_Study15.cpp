@@ -8,7 +8,7 @@ using namespace cv;
 int main()
 {
 	Mat A = imread("E:image.jpg");
-	Mat Row = M.row(1);
+	Mat Row = A.row(1);
 	cout << "Row = " << endl << Row << endl;
 	
 	return 0;
