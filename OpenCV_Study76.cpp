@@ -14,20 +14,20 @@ int main()
     int keyboard = 0;
 
     pMOG2 = createBackgroundSubtractorMOG2();
-    VideoCapture capture("desert.mp4");
-    if (!capture.isOpened()) {
+    VideoCapture cap("data/vtest.avi");
+    if (!cap.isOpened()) {
         cout << "error !" << endl;
         exit(EXIT_FAILURE);
     }
     while ((char)keyboard != 27){
-        if (!capture.read(frame)) exit(EXIT_FAILURE);
+        if (!cap.read(frame)) exit(EXIT_FAILURE);
 
         pMOG2->apply(frame, result);
         imshow("Frame", frame);
         imshow("FG Mask MOG 2", result);
         keyboard = waitKey(30);
     }
-    capture.release();
+    cap.release();
 
     return 0;
 }
